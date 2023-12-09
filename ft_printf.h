@@ -6,7 +6,7 @@
 /*   By: lulm <lulm@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/09 07:29:30 by lulm              #+#    #+#             */
-/*   Updated: 2023/12/09 08:36:17 by lulm             ###   ########.fr       */
+/*   Updated: 2023/12/09 09:28:56 by lulm             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,11 @@
 # include <stdarg.h>
 
 size_t	ft_strlen(const char *str);
+int		ft_putchar(char c);
 int		ft_putchar_fd(char c, int fd);
+int		ft_putstr(char *str);
 int		ft_putstr_fd(char *s, int fd);
+int		ft_putnbr(int nb);
+int		ft_putnbr_fd(int n, int fd);
 int		ft_hexvoid(unsigned long long int i);
+int		ft_printf(const char *, ...);

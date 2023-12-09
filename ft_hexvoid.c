@@ -6,7 +6,7 @@
 /*   By: lulm <lulm@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/09 07:47:56 by lulm              #+#    #+#             */
-/*   Updated: 2023/12/09 08:25:11 by lulm             ###   ########.fr       */
+/*   Updated: 2023/12/09 08:44:01 by lulm             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,13 +40,10 @@ int	ft_hexvoid(unsigned long long i)
 	else
 	{
 		if (i < 10)
-		{
 			ft_putchar(i + '0');
-		}
 		else
-		{
 			ft_putchar((i - 10) + 'a');
-		}
 	}
+	j += write(1, "0x", 2);
 	return (j);
 }

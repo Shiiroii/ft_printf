@@ -6,7 +6,7 @@
 /*   By: lulm <lulm@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/09 07:45:51 by lulm              #+#    #+#             */
-/*   Updated: 2023/12/09 08:36:17 by lulm             ###   ########.fr       */
+/*   Updated: 2023/12/09 08:50:07 by lulm             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,6 @@ int	ft_putstr(char *str)
 	int	i;
 
 	i = 0;
-	if (str == NULL)
-	{
-		return (ft_putstr("(null)"));
-	}
 	while (str[i] != '\0')
 	{
 		ft_putchar(str[i]);
