@@ -6,7 +6,7 @@
 /*   By: lulm <lulm@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/09 09:20:35 by lulm              #+#    #+#             */
-/*   Updated: 2023/12/09 09:24:45 by lulm             ###   ########.fr       */
+/*   Updated: 2023/12/11 15:18:01 by lulm             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,9 +51,12 @@ int	ft_putnbr_fd(int n, int fd)
 			n = -n;
 		}
 		if (n > 9)
-		{
 			ft_putnbr_fd(n / 10, fd);
-		}
 		ft_putchar_fd(n % 10 + '0', fd);
 	}
+}
+
+int	ft_putnbr_int10(int n)
+{
+	if (nb )
 }
