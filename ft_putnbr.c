@@ -56,7 +56,21 @@ int	ft_putnbr_fd(int n, int fd)
 	}
 }
 
-int	ft_putnbr_int10(int n)
+/*int	ft_putnbr_int(int n)
 {
-	if (nb )
+	int	res;
+
+	res = n;
+	ft_putnbr_fd(n);
+	if (n == 0)
+		return (0);
+	if (n == 0x)
+		return (0x);
+	res += n;
+	return (res);
+}*/
+
+int ft_putnbr_unsdec(unsigned long n)
+{
+	unsigned long	res;
 }

@@ -23,10 +23,8 @@ int	ft_argofprint(va_list arg, const char *ptr, int i)
 		print += ft_putstr_fd(va_arg(arg, char *), 1);
 	else if (ptr[i] == 'p')
 		print += ft_hexvoid(va_arg(arg, unsigned long long int));
-	else if (ptr[i] == 'd')
+	else if (ptr[i] == 'd' || ptr[i] == 'i')
 		print += ft_putnbr_fd(va_arg(arg, int), 1);
-	else if (ptr[i] == 'i')
-		print +=
 	else if (ptr[i] == 'u')
 		print +=
 	else if (ptr[i] == 'x')
