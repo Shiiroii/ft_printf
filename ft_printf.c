@@ -6,7 +6,7 @@
 /*   By: lulm <lulm@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/09 07:35:19 by lulm              #+#    #+#             */
-/*   Updated: 2023/12/09 09:28:41 by lulm             ###   ########.fr       */
+/*   Updated: 2023/12/18 09:58:54 by lulm             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,9 @@ int	ft_argofprint(va_list arg, const char *ptr, int i)
 	else if (ptr[i] == 'd' || ptr[i] == 'i')
 		print += ft_putnbr_fd(va_arg(arg, int), 1);
 	else if (ptr[i] == 'u')
-		print +=
+		print += ft_putnbr_unsdec(va_arg(arg, unsigned int), 1);
 	else if (ptr[i] == 'x')
+		print += 
 	else if (ptr[i] == 'X')
 	else if (ptr[i] == 's')
 	{

@@ -6,7 +6,7 @@
 /*   By: lulm <lulm@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/09 09:20:35 by lulm              #+#    #+#             */
-/*   Updated: 2023/12/11 15:18:01 by lulm             ###   ########.fr       */
+/*   Updated: 2023/12/18 10:39:16 by lulm             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,9 +32,7 @@ int	ft_putnbr(int nb)
 		ft_putnbr(nb % 10);
 	}
 	else
-	{
 		ft_putchar(nb + '0');
-	}
 }
 
 int	ft_putnbr_fd(int n, int fd)
@@ -56,21 +54,24 @@ int	ft_putnbr_fd(int n, int fd)
 	}
 }
 
-/*int	ft_putnbr_int(int n)
+static int	uns_length(unsigned int nb)
 {
-	int	res;
+	int	i;
 
-	res = n;
-	ft_putnbr_fd(n);
-	if (n == 0)
-		return (0);
-	if (n == 0x)
-		return (0x);
-	res += n;
-	return (res);
-}*/
+	i = 0;
+}
 
-int ft_putnbr_unsdec(unsigned long n)
+int	ft_putnbr_unsdec(unsigned int nb)
 {
-	unsigned long	res;
+	int	i;
+
+	else if (nb < 0)
+		return (NULL);
+	else if (nf > 9)
+	{
+		ft_putnbr_unsdec(n / 10);
+		ft_putnbr_unsdec(n % 10);
+	}
+	else
+		ft_putchar(nb + '0');
 }
