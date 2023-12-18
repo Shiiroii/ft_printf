@@ -6,7 +6,7 @@
 /*   By: lulm <lulm@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/09 07:48:19 by lulm              #+#    #+#             */
-/*   Updated: 2023/12/09 08:36:17 by lulm             ###   ########.fr       */
+/*   Updated: 2023/12/18 11:06:36 by lulm             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,4 +20,9 @@ int	ft_putchar(char c)
 int	ft_putchar_fd(char c, int fd)
 {
 	return (write(fd, &c, 1));
+}
+
+int	ft_putpercent(char c)
+{
+	return (write(1, &'%', 1));
 }
