@@ -6,7 +6,7 @@
 /*   By: lulm <lulm@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/09 07:35:19 by lulm              #+#    #+#             */
-/*   Updated: 2023/12/19 08:38:36 by lulm             ###   ########.fr       */
+/*   Updated: 2023/12/19 09:01:23 by lulm             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ int	ft_argofprint(va_list arg, const char *ptr, int i)
 	return (print);
 }
 
-int	ft_printf(const char *, ...)
+int	ft_printf(const char *str, ...)
 {
 
 }
