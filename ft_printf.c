@@ -6,7 +6,7 @@
 /*   By: lulm <lulm@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/09 07:35:19 by lulm              #+#    #+#             */
-/*   Updated: 2023/12/18 11:10:10 by lulm             ###   ########.fr       */
+/*   Updated: 2023/12/19 08:38:36 by lulm             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ int	ft_argofprint(va_list arg, const char *ptr, int i)
 	else if (ptr[i] == 'x')
 		print += ft_lowhexa(va_arg(arg, int));
 	else if (ptr[i] == 'X')
-		print += ft_uphexa(va_arg(arg, int))
+		print += ft_uphexa(va_arg(arg, int));
 	else if (ptr[i] == '%')
 		print += ft_putpercent(va_arg(arg, int), 1);
 	return (print);
