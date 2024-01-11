@@ -6,7 +6,7 @@
 /*   By: lulm <lulm@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/09 09:20:35 by lulm              #+#    #+#             */
-/*   Updated: 2024/01/11 07:37:53 by lulm             ###   ########.fr       */
+/*   Updated: 2024/01/11 08:38:07 by lulm             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,20 +35,20 @@ int	ft_putnbr(int nb)
 		ft_putchar(nb + '0');
 }
 
-int	ft_putnbr_fd(int n, int fd)
+int	ft_putnbr_fd(int nb, int fd)
 {
-	if (n == -2147483648)
+	if (nb == -2147483648)
 		write(fd, "-2147483648", 11);
 	else
 	{
-		if (n < 0)
+		if (nb < 0)
 		{
 			ft_putchar_fd('-', fd);
-			n = -n;
+			nb = -nb;
 		}
-		if (n > 9)
-			ft_putnbr_fd(n / 10, fd);
-		ft_putchar_fd(n % 10 + '0', fd);
+		if (nb > 9)
+			ft_putnbr_fd(nb / 10, fd);
+		ft_putchar_fd(nb % 10 + '0', fd);
 	}
 }
 

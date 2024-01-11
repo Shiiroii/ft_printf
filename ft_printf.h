@@ -6,7 +6,7 @@
 /*   By: lulm <lulm@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/09 07:29:30 by lulm              #+#    #+#             */
-/*   Updated: 2024/01/11 08:36:02 by lulm             ###   ########.fr       */
+/*   Updated: 2024/01/11 08:48:47 by lulm             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int		ft_putchar_fd(char c, int fd);
 int		ft_putstr(char *str);
 int		ft_putstr_fd(char *s, int fd);
 int		ft_putnbr(int nb);
-int		ft_putnbr_fd(int n, int fd);
+int		ft_putnbr_fd(int nb, int fd);
 int		ft_putnbr_unsdec(unsigned int nb);
 int		ft_plength(unsigned long long int i);
 int		ft_hexvoid(unsigned long long int i);
