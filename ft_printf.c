@@ -6,7 +6,7 @@
 /*   By: lulm <lulm@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/09 07:35:19 by lulm              #+#    #+#             */
-/*   Updated: 2023/12/19 09:01:23 by lulm             ###   ########.fr       */
+/*   Updated: 2024/01/11 08:09:21 by lulm             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,11 +28,11 @@ int	ft_argofprint(va_list arg, const char *ptr, int i)
 	else if (ptr[i] == 'u')
 		print += ft_putnbr_unsdec(va_arg(arg, unsigned int), 1);
 	else if (ptr[i] == 'x')
-		print += ft_lowhexa(va_arg(arg, int));
+		print += ft_hexa(va_arg(arg, int));
 	else if (ptr[i] == 'X')
-		print += ft_uphexa(va_arg(arg, int));
+		print += ft_puthexa(va_arg(arg, int));
 	else if (ptr[i] == '%')
-		print += ft_putpercent(va_arg(arg, int), 1);
+		print += ft_putchar('%');
 	return (print);
 }
 

@@ -6,16 +6,11 @@
 /*   By: lulm <lulm@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/18 10:01:04 by lulm              #+#    #+#             */
-/*   Updated: 2023/12/18 11:10:06 by lulm             ###   ########.fr       */
+/*   Updated: 2024/01/11 08:09:21 by lulm             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_lowhexa(int nb)
-{
-
-}
-
-int ft_uphexa(int nb)
+int ft_puthexa(unsigned int nb)
 {
 
 }
