@@ -6,7 +6,7 @@
 /*   By: lulm <lulm@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/09 07:35:19 by lulm              #+#    #+#             */
-/*   Updated: 2024/01/15 08:29:47 by lulm             ###   ########.fr       */
+/*   Updated: 2024/01/18 08:02:52 by lulm             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,13 +47,15 @@ void	ft_check(char str)
 int	ft_printf(const char *str, ...)
 {
 	int		i;
+	int		u;
 	va_list	arg;
 
 	i = 0;
+	u = 0;
 	va_start(arg, str);
-	while (*str)
+	while (str[i])
 	{
-		if (*str == '%')
+		if (str[i] == '%')
 		{
 			str++;
 			if (*str == NULL)
