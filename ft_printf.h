@@ -6,7 +6,7 @@
 /*   By: lulm <lulm@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/09 07:29:30 by lulm              #+#    #+#             */
-/*   Updated: 2024/01/22 08:33:41 by lulm             ###   ########.fr       */
+/*   Updated: 2024/01/22 08:36:03 by lulm             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,3 +31,5 @@ int		ft_hexvoid(unsigned long long int i);
 int		ft_lowhexa(unsigned int nb);
 int		ft_uphexa(unsigned int nb);
 int		ft_printf(const char *str, ...);
+
+#endif
