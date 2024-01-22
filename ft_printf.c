@@ -6,7 +6,7 @@
 /*   By: lulm <lulm@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/09 07:35:19 by lulm              #+#    #+#             */
-/*   Updated: 2024/01/22 07:56:25 by lulm             ###   ########.fr       */
+/*   Updated: 2024/01/22 08:01:59 by lulm             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,7 @@ int	ft_printf(const char *str, ...)
 		if (str[i] == '%')
 		{
 			str++;
-			ft_argofprint(str[i], &args, &len, &i);
+			ft_argofprint(str[i], &args, &len);
 			str++
 		}
 		else
