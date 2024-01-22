@@ -6,7 +6,7 @@
 /*   By: lulm <lulm@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/09 07:35:19 by lulm              #+#    #+#             */
-/*   Updated: 2024/01/18 08:02:52 by lulm             ###   ########.fr       */
+/*   Updated: 2024/01/22 07:56:25 by lulm             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,35 +36,29 @@ int	ft_argofprint(va_list arg, const char *ptr, int i)
 	return (print);
 }
 
-void	ft_check(char str)
-{
-	if (str != 'c' && str != 's' && str != 'p' && str != 'd'
-		&& str != 'i' && str != 'u' && str != 'x'
-		&& str != 'X' && str != '%')
-
-}
-
 int	ft_printf(const char *str, ...)
 {
 	int		i;
-	int		u;
+	int		len;
 	va_list	arg;
 
 	i = 0;
-	u = 0;
+	len = 0;
 	va_start(arg, str);
 	while (str[i])
 	{
 		if (str[i] == '%')
 		{
 			str++;
-			if (*str == NULL)
-				return (i);
-			if (*str == '-')
-			{
-				str++;
-
-			}
+			ft_argofprint(str[i], &args, &len, &i);
+			str++
+		}
+		else
+		{
+			ft_putchar_len((char)str[i], &len);
+				i++;
 		}
 	}
+	va_end(arg);
+	return(len);
 }
