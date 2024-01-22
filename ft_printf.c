@@ -6,7 +6,7 @@
 /*   By: lulm <lulm@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/09 07:35:19 by lulm              #+#    #+#             */
-/*   Updated: 2024/01/22 08:08:07 by lulm             ###   ########.fr       */
+/*   Updated: 2024/01/22 08:42:22 by lulm             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ int	ft_argofprint(va_list arg, const char *ptr, int i)
 	else if (ptr[i] == 'd' || ptr[i] == 'i')
 		print += ft_putnbr_fd(va_arg(arg, int), 1);
 	else if (ptr[i] == 'u')
-		print += ft_putnbr_unsdec(va_arg(arg, unsigned int), 1);
+		print += ft_putnbr_unsdec(va_arg(arg, unsigned int));
 	else if (ptr[i] == 'x')
 		print += ft_lowhexa(va_arg(arg, unsigned int));
 	else if (ptr[i] == 'X')
@@ -50,7 +50,7 @@ int	ft_printf(const char *str, ...)
 		if (str[i] == '%')
 		{
 			i++;
-			ft_argofprint(str[i], &args, &len);
+			ft_argofprint(arg, str, i);
 			i++;
 		}
 		else
