@@ -6,7 +6,7 @@
 #    By: lulm <lulm@student.42.fr>                  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/09 07:16:48 by lulm              #+#    #+#              #
-#    Updated: 2023/12/09 08:36:17 by lulm             ###   ########.fr        #
+#    Updated: 2024/01/22 08:25:25 by lulm             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,13 @@ CFLAGS	= -Wall -Werror -Wextra
 
 RM		= rm -fr
 
-SRCS	=
+SRCS =	ft_hexvoid.c	\
+		ft_printf.c		\
+		ft_putchar.c	\
+		ft_puthexa.c	\
+		ft_putnbr.c		\
+		ft_putstr.c		\
+		ft_strlen.c
 
 OBJS	= $(SRCS:.c=.o)
 
