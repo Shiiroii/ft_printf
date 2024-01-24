@@ -6,7 +6,7 @@
 /*   By: lulm <lulm@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/09 07:48:19 by lulm              #+#    #+#             */
-/*   Updated: 2024/01/22 08:43:00 by lulm             ###   ########.fr       */
+/*   Updated: 2024/01/24 07:54:47 by lulm             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,4 @@ int	ft_putchar(char c)
 int	ft_putchar_fd(char c, int fd)
 {
 	return (write(fd, &c, 1));
-}
-
-void	ft_putchar_len(char c, int *len)
-{
-	write(1, &c, 1);
-	(*len)++;
 }

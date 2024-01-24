@@ -6,7 +6,7 @@
 /*   By: lulm <lulm@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/09 07:29:30 by lulm              #+#    #+#             */
-/*   Updated: 2024/01/22 09:50:05 by lulm             ###   ########.fr       */
+/*   Updated: 2024/01/24 07:54:46 by lulm             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@
 size_t	ft_strlen(const char *str);
 int		ft_putchar(char c);
 int		ft_putchar_fd(char c, int fd);
-int		ft_putchar_len(char c, int *len);
 int		ft_putstr(char *str);
 int		ft_putstr_fd(char *s, int fd);
 int		ft_putnbr(int nb);
