@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: lulm <lulm@student.42.fr>                  +#+  +:+       +#+         #
+#    By: lionelulm <lionelulm@student.42.fr>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/09 07:16:48 by lulm              #+#    #+#              #
-#    Updated: 2024/01/22 08:28:05 by lulm             ###   ########.fr        #
+#    Updated: 2024/01/24 10:27:29 by lionelulm        ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,6 +23,7 @@ SRCS =	ft_hexvoid.c	\
 		ft_putchar.c	\
 		ft_puthexa.c	\
 		ft_putnbr.c		\
+		ft_putnbr_fd.c	\
 		ft_putstr.c		\
 		ft_strlen.c
 
