@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lulm <lulm@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: lionelulm <lionelulm@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/09 07:45:51 by lulm              #+#    #+#             */
-/*   Updated: 2024/01/24 07:56:10 by lulm             ###   ########.fr       */
+/*   Updated: 2024/01/25 12:47:20 by lionelulm        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,4 +31,6 @@ int	ft_putstr_fd(char *s, int fd)
 	{
 		return (write(fd, s, ft_strlen(s)));
 	}
+	else
+		return (0);
 }
