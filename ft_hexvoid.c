@@ -6,7 +6,7 @@
 /*   By: lulm <lulm@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/09 07:47:56 by lulm              #+#    #+#             */
-/*   Updated: 2023/12/09 08:44:01 by lulm             ###   ########.fr       */
+/*   Updated: 2024/01/26 09:03:33 by lulm             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,11 +27,8 @@ int	ft_plength(unsigned long long int i)
 	return (j);
 }
 
-int	ft_hexvoid(unsigned long long i)
+void	ft_hex(unsigned long long i)
 {
-	int	j;
-
-	j = ft_plength(i);
 	if (i >= 16)
 	{
 		ft_hexvoid(i / 16);
@@ -44,6 +41,24 @@ int	ft_hexvoid(unsigned long long i)
 		else
 			ft_putchar((i - 10) + 'a');
 	}
-	j += write(1, "0x", 2);
-	return (j);
+}
+
+
+int	ft_hexvoid(unsigned long long n)
+{
+	int	i;
+	int	len;
+
+	i = 0;
+	len = ft_putstr("0x");
+	if (len < 0)
+		return (-1);
+	else
+		i += len;
+	if (n == 0)
+	{
+		if (putchar('0') < 0)
+			return (-1)
+	}
+
 }
