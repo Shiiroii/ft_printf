@@ -6,7 +6,7 @@
 /*   By: lulm <lulm@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/09 07:47:56 by lulm              #+#    #+#             */
-/*   Updated: 2024/01/29 08:02:24 by lulm             ###   ########.fr       */
+/*   Updated: 2024/01/29 08:29:30 by lulm             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,15 +31,15 @@ void	ft_hex(unsigned long long i)
 {
 	if (i >= 16)
 	{
-		ft_hexvoid(i / 16);
-		ft_hexvoid(i % 16);
+		ft_hex(i / 16);
+		ft_hex(i % 16);
 	}
 	else
 	{
-		if (i < 10)
-			ft_putchar(i + '0');
-		else
+		if (i > 9)
 			ft_putchar((i - 10) + 'a');
+		else
+			ft_putchar(i + '0');
 	}
 }
 
