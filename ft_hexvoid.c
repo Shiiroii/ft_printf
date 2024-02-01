@@ -6,7 +6,7 @@
 /*   By: lulm <lulm@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/09 07:47:56 by lulm              #+#    #+#             */
-/*   Updated: 2024/01/29 08:29:30 by lulm             ###   ########.fr       */
+/*   Updated: 2024/02/01 10:51:47 by lulm             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,40 +27,36 @@ int	ft_plength(unsigned long long int i)
 	return (j);
 }
 
-void	ft_hex(unsigned long long i)
+void	ft_hex(unsigned long long n)
 {
-	if (i >= 16)
+	if (n >= 16)
 	{
-		ft_hex(i / 16);
-		ft_hex(i % 16);
+		ft_hex(n / 16);
+		ft_hex(n % 16);
 	}
 	else
 	{
-		if (i > 9)
-			ft_putchar((i - 10) + 'a');
+		if (n <= 9)
+			ft_putchar(n + '0');
 		else
-			ft_putchar(i + '0');
+			ft_putchar((n - 10) + 'a');
 	}
 }
 
-int	ft_hexvoid(unsigned long long n)
+int	ft_hexvoid(unsigned long long ptr)
 {
 	int	i;
-	int	len;
 
 	i = 0;
-	len = ft_putstr("0x");
-	if (len < 0)
-		return (-1);
-	else
-		i += len;
-	if (n == 0)
+	if (ptr == 0)
 	{
-		if (putchar('0') < 0)
-			return (-1);
-		i++;
+		i = write(1, "(nil)", 5);
 	}
 	else
-		ft_hex(n);
-	return (ft_plength(n) + i);
+	{
+		i = i + write(1, "0x", 2);
+		ft_hex(ptr);
+		i = i + ft_plength(ptr);
+	}
+	return (i);
 }

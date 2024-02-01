@@ -6,7 +6,7 @@
 /*   By: lulm <lulm@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/26 03:00:38 by lionelulm         #+#    #+#             */
-/*   Updated: 2024/01/26 08:43:05 by lulm             ###   ########.fr       */
+/*   Updated: 2024/02/01 10:34:49 by lulm             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,10 @@ int main()
 	char			c = 'a';
 	int				intd = 2147483647;
 	int				inti = 2147483647;
+	int				intdo = 0;
 	char			str[] = "Coucou, c'est moi !";
 	int				*ptr = &intd;
+	int				*ptro = &intdo;
 	unsigned int	hexa = 255;
 	unsigned int	dec = 333333;
 
@@ -30,7 +32,8 @@ int main()
 	ft_printf("Unsigned Decimal: %u\n", dec);
 	ft_printf("Lower Hexa: %x\n", hexa);
 	ft_printf("Upper Hexa: %X\n", hexa);
-	ft_printf("Tout: %c, %d, %i, %s, %p, %u, %x, %X, %%,\n\n", c, intd, inti, str, ptr, dec, hexa, hexa);
+	ft_printf("Tout: %c, %d, %i, %s, %p, %u, %x, %X, %%,\n", c, intd, inti, str, ptr, dec, hexa, hexa);
+	ft_printf("Pointer 0: %p \n\n", 0);
 
 	printf("Char: %c\n", c);
 	printf("Int d: %d\n", intd);
@@ -41,7 +44,7 @@ int main()
 	printf("Lower Hexa: %x\n", hexa);
 	printf("Upper Hexa: %X\n", hexa);
 	printf("Tout: %c, %d, %i, %s, %p, %u, %x, %X, %%,\n", c, intd, inti, str, ptr, dec, hexa, hexa);
-
+	printf("Pointer 0: %p\n", 0);
 	return (0);
 }
 
