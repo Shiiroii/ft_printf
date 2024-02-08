@@ -33,7 +33,7 @@ int main()
 	ft_printf("Lower Hexa: %x\n", hexa);
 	ft_printf("Upper Hexa: %X\n", hexa);
 	ft_printf("Tout: %c, %d, %i, %s, %p, %u, %x, %X, %%,\n", c, intd, inti, str, ptr, dec, hexa, hexa);
-	ft_printf("Pointer 0: %p \n\n", 0);
+	ft_printf("Pointer 0: %p \n\n", ptr);
 
 	printf("Char: %c\n", c);
 	printf("Int d: %d\n", intd);
@@ -44,7 +44,7 @@ int main()
 	printf("Lower Hexa: %x\n", hexa);
 	printf("Upper Hexa: %X\n", hexa);
 	printf("Tout: %c, %d, %i, %s, %p, %u, %x, %X, %%,\n", c, intd, inti, str, ptr, dec, hexa, hexa);
-	printf("Pointer 0: %p\n", 0);
+	printf("Pointer 0: %p\n", ptr);
 	return (0);
 }
 
