@@ -1,5 +1,6 @@
 Write ft_printf(), a function that will mimic the original printf() from libc.
 
+
 It has to implement the following conversions :
 
 %c, printing a single character.
@@ -19,6 +20,7 @@ It has to implement the following conversions :
 %X, printing a number in hexadecimal (base 16) in uppercase format.
 
 %%, printing a percent sign.
+
 
 Use "make" before usage.
 
