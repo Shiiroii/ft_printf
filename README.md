@@ -21,4 +21,5 @@ It has to implement the following conversions :
 %%, printing a percent sign.
 
 Use "make" before usage.
+
 ft_printf("%_", ___);
